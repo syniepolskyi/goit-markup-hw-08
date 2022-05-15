@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <header class="header header--bordered-bottom">
+        <div class="container header__container">
+            <a class="logo logo--shifted" href="index.html">
+                <span class="logo__accent">Web</span><span>Studio</span>
+            </a>
+            <div class="menu-container" data-menu>
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a href="index.html" class="nav__link ">Студия</a></li>
+                        <li class="nav__item"><a href="portfolio.html" class="nav__link nav__link--current">Портфолио</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <a href="mailto:info@devstudio.com" class="contacts__link">
+                                <svg viewbox="0 0 16 12" class="svg-envelope">
+                                    <use href="images/icons.svg#envelope"></use>
+                                </svg> info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="tel:+380961111111" class="contacts__link">
+                                <svg viewbox="0 0 10 16" class="svg-smartphone">
+                                    <use href="images/icons.svg#smartphone"></use>
+                                </svg> +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    <ul class="hsocials">
+                        <li class="hsocials__item">
+                            <a class="hsocials__link" href="https://www.instagram.com/">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="hsocials__item">
+                            <a class="hsocials__link" href="https://www.twitter.com/">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="hsocials__item">
+                            <a class="hsocials__link" href="https://www.facebook.com/">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="hsocials__item">
+                            <a class="hsocials__link" href="https://www.linkedin.com/">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+                <svg
+                  width="40"
+                  height="40"
+                  aria-label="переключатель мобильного меню"
+                >
+                  <use
+                    class="close"
+                    href="./images/icons.svg#icon_close2"
+                  ></use>
+                  <use
+                    class="open"
+                    href="./images/icons.svg#icon_burger"
+                  ></use>
+                </svg>
+              </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section works">
+            <div class="container">
+                <div class="filter-buttons-container">
+                    <ul class="filter-buttons">
+                        <li class="filter-buttons__item">
+                            <button type="button" class="btn-filter">Все</button>
+                        </li>
+                        <li class="filter-buttons__item">
+                            <button type="button" class="btn-filter">Веб-сайты</button>
+                        </li>
+                        <li class="filter-buttons__item">
+                            <button type="button" class="btn-filter">Приложения</button>
+                        </li>
+                        <li class="filter-buttons__item">
+                            <button type="button" class="btn-filter">Дизайн</button>
+                        </li>
+                        <li class="filter-buttons__item">
+                            <button type="button" class="btn-filter">Маркетинг</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="work-list">
+                    <li class="work-item">
+                        <a href="" class="work-card">
+                            <div class="work-card-thumb">
+                                <img src="images/portfolio/portfolio1.jpg" srcset="
+                                ./images/portfolio/portfolio1.jpg,
+                                ./images/portfolio/portfolio1-x2.jpg 2x
+                              " alt="Веб-сайт: Технокряк" width="370">
+                                <p class="work-card-text">
+                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                                </p>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-title">Технокряк</h3>
+                                <p class="work-descr">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-item">
+                        <a href="" class="work-card">
+                            <div class="work-card-thumb">
+                                <img src="images/portfolio/portfolio2.jpg" srcset="
+                                ./images/portfolio/portfolio2.jpg,
+                                ./images/portfolio/portfolio2-x2.jpg 2x
+                              " alt="Дизайн: Постер New Orlean vs Golden Star" width="370">
+                                <p class="work-card-text">
+                                    Постер New Orlean vs Golden Star - это лучший наш постер, который мы быстро адаптировали под нужды клиента
+                                </p>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-title">Постер New Orlean vs Golden Star</h3>
+                                <p class="work-descr">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-item">
+                        <a href="" class="work-card">
+                            <div class="work-card-thumb">
+                                <img src="images/portfolio/portfolio-1.jpg" srcset="
+                                ./images/portfolio/portfolio-1.jpg,
+                                ./images/portfolio/portfolio-1-x2.jpg 2x
+                              " alt="Приложение: Ресторан Seafood" width="370">
+                                <p class="work-card-text">
+                                    Приложение ресторана Seafood позволило быстро и эффективно оформлять заказы, вести учет блюд и ингредиентов
+                                </p>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-title">Ресторан Seafood</h3>
+                                <p class="work-descr">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-item">
+                        <a href="" class="work-card">
+                            <div class="work-card-thumb">
+                                <img src="images/portfolio/portfolio-2.jpg" srcset="
+                                ./images/portfolio/portfolio-2.jpg,
+                                ./images/portfolio/portfolio-2-x2.jpg 2x
+                              " alt="Маркетинг: Проект Prime" width="370">
+                                <p class="work-card-text">
+                                    Данный проект - неплохое и компромиссное решение для внедрения современных технологий в маркетинге
+                                </p>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-title">Проект Prime</h3>
+                                <p class="work-descr">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-item">
+                        <a href="" class="work-card">
+                            <div class="work-card-thumb">
+                                <img src="images/portfolio/portfolio5.jpg" srcset="
+                                ./images/portfolio/portfolio5.jpg,
+                                ./images/portfolio/portfolio5-x2.jpg 2x
+                              " alt="Приложение: Проект Boxes" width="370">
+                                <p class="work-card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quam inventore beatae? Cumque facilis, ratione facere rerum deleniti deserunt placeat, expedita eveniet magni ad perspiciatis rem dignissimos quaerat eum aspernatur? Error perferendis
+                                    eveniet saepe dolorum modi expedita quam magnam, amet illum eaque cupiditate voluptatem necessitatibus quas, perspiciatis, culpa iure nesciunt similique! Fugiat, facere adipisci ipsam aspernatur impedit quaerat mollitia
+                                    ullam!
+                                </p>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-title">Проект Boxes</h3>
+                                <p class="work-descr">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-item">
+                        <a href="" class="work-card">
+                            <div class="work-card-thumb">
+                                <img src="images/portfolio/111.jpg" srcset="
+                                ./images/portfolio/111.jpg,
+                                ./images/portfolio/111-x2.jpg 2x
+                              " alt="Веб-сайт: Inspiration has no Borders" width="370">
+                                <p class="work-card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quam inventore beatae? Cumque facilis, ratione facere rerum deleniti deserunt placeat, expedita eveniet magni ad perspiciatis rem dignissimos quaerat eum aspernatur? Error perferendis
+                                    eveniet saepe dolorum modi expedita quam magnam, amet illum eaque cupiditate voluptatem necessitatibus quas, perspiciatis, culpa iure nesciunt similique! Fugiat, facere adipisci ipsam aspernatur impedit quaerat mollitia
+                                    ullam!
+                                </p>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-title">Inspiration has no Borders</h3>
+                                <p class="work-descr">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-item">
+                        <a href="" class="work-card">
+                            <div class="work-card-thumb">
+                                <img src="images/portfolio/portfolio7.jpg" srcset="
+                                ./images/portfolio/portfolio7.jpg,
+                                ./images/portfolio/portfolio7-x2.jpg 2x
+                              " alt="Дизайн: Издание Limited Edition" width="370">
+                                <p class="work-card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quam inventore beatae? Cumque facilis, ratione facere rerum deleniti deserunt placeat, expedita eveniet magni ad perspiciatis rem dignissimos quaerat eum aspernatur? Error perferendis
+                                    eveniet saepe dolorum modi expedita quam magnam, amet illum eaque cupiditate voluptatem necessitatibus quas, perspiciatis, culpa iure nesciunt similique! Fugiat, facere adipisci ipsam aspernatur impedit quaerat mollitia
+                                    ullam!
+                                </p>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-title">Издание Limited Edition</h3>
+                                <p class="work-descr">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-item">
+                        <a href="" class="work-card">
+                            <div class="work-card-thumb">
+                                <img src="images/portfolio/portfolio8.jpg" srcset="
+                                ./images/portfolio/portfolio8.jpg,
+                                ./images/portfolio/portfolio8-x2.jpg 2x
+                              " alt="Маркетинг: Проект LAB" width="370">
+                                <p class="work-card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quam inventore beatae? Cumque facilis, ratione facere rerum deleniti deserunt placeat, expedita eveniet magni ad perspiciatis rem dignissimos quaerat eum aspernatur? Error perferendis
+                                    eveniet saepe dolorum modi expedita quam magnam, amet illum eaque cupiditate voluptatem necessitatibus quas, perspiciatis, culpa iure nesciunt similique! Fugiat, facere adipisci ipsam aspernatur impedit quaerat mollitia
+                                    ullam!
+                                </p>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-title">Проект LAB</h3>
+                                <p class="work-descr">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-item">
+                        <a href="" class="work-card">
+                            <div class="work-card-thumb">
+                                <img src="images/portfolio/2910404.jpg" srcset="
+                                ./images/portfolio/2910404.jpg,
+                                ./images/portfolio/2910404-x2.jpg 2x
+                              " alt="Приложение: Growing Business" width="370">
+                                <p class="work-card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quam inventore beatae? Cumque facilis, ratione facere rerum deleniti deserunt placeat, expedita eveniet magni ad perspiciatis rem dignissimos quaerat eum aspernatur? Error perferendis
+                                    eveniet saepe dolorum modi expedita quam magnam, amet illum eaque cupiditate voluptatem necessitatibus quas, perspiciatis, culpa iure nesciunt similique! Fugiat, facere adipisci ipsam aspernatur impedit quaerat mollitia
+                                    ullam!
+                                </p>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-title">Growing Business</h3>
+                                <p class="work-descr">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__address">
+                <div class="footer__logo-container">
+                    <a href="index.html" class="logo">
+                        <span class="logo__accent">Web</span><span class="logo__footer">Studio</span>
+                    </a>
+                </div>
+                <address class="address">
+                <ul class="address__list">
+                    <li class="address__item"><a class="footer__link footer__link--address" href="#">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="address__item"><a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
+                    <li class="address__item"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
+                </ul>
+                </address>
+            </div>
+            <div class="socials">
+                <b class="socials__title">присоединяйтесь</b>
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.instagram.com/">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="images/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.twitter.com/">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="images/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.facebook.com/">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="images/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.linkedin.com/">
+                            <svg class="socials__icon" width="20" height="20">
+                                <use href="images/icons.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subcription">
+                <form class="subcription__form" action="/" method="POST" name="subscribe">
+                    <label for="email_subscribe" class="subcription__email-title">подпишитесь на рассылку</label>
+                    <input type="email" class="subcription__email-input" placeholder="E-mail" id="email_subscribe" />
+                    <button type="submit" class="subcription__button">
+                        Подписаться
+                        <svg class="subcription__icon" width="24" height="24">
+                            <use href="images/icons.svg#icon_send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

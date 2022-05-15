@@ -1,0 +1,149 @@
+/* секція опису команди */
+
+.team {
+    background-color: $button-border-color;
+}
+
+
+/* заголовок секції команди */
+
+.team__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-color;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {}
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+}
+
+
+/* список працівників компанії з зображеннями */
+
+.team__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+        max-width: initial;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * 30px);
+        margin-right: 0;
+        margin-top: calc(-1 * 30px);
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: initial;
+        display: flex;
+        margin: 0;
+    }
+}
+
+
+/* елемент списку - працівник */
+
+.team__item {
+    background: $bg-color;
+    /* material shadow v1 */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 24px;
+    &:not(:first-child) {
+        margin-top: 30px;
+        @media screen and (min-width: $desktop) {
+            margin-top: 0;
+            margin-left: 30px;
+        }
+    }
+    & img {
+        width: 100%;
+    }
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+        width: 354px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 30px;
+        & img {
+            width: 270px;
+        }
+    }
+}
+
+
+/* Прізвище, ім'я - як тайтл */
+
+.team__person {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+
+/* посада працівника */
+
+.team__position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+
+/* social */
+
+.team__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team__social-link {
+    display: flex;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $hover-color;
+    }
+}
+
+.team__social-link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team__social-icon {
+    fill: $social-icon-fill;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .team__social-link:hover &,
+    .team__social-link:focus & {
+        fill: $bg-color;
+    }
+}
