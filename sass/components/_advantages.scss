@@ -1,12 +1,9 @@
 .advantages {
-    max-width: 450px;
     margin: 0 auto;
     @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
-        max-width: initial;
         margin: inherit;
     }
     @media screen and (min-width: $desktop) {
-        max-width: initial;
         margin: inherit;
     }
 }

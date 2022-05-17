@@ -5,17 +5,25 @@ body {
     font-family: $main-font-family;
 }
 
+body.is-open {
+    height: 100vh;
+    overflow: hidden;
+}
+
 .container {
     width: 100%;
+    max-width: $mobile;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
         width: $tablet;
+        max-width: $tablet;
     }
     @media screen and (min-width: $desktop) {
         width: $desktop;
+        max-width: $desktop;
     }
 }
 

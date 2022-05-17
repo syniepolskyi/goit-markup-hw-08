@@ -1,18 +1,5 @@
     /* Постійні клієнти - h2 */
     
-    .clients {
-        max-width: 450px;
-        margin: 0 auto;
-        @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
-            max-width: initial;
-            margin: inherit;
-        }
-        @media screen and (min-width: $desktop) {
-            max-width: initial;
-            margin: inherit;
-        }
-    }
-    
     .clients__title {
         font-weight: 700;
         font-size: 28px;
@@ -40,6 +27,7 @@
         margin-top: calc(-1 * 30px);
         justify-content: center;
         padding: 0;
+        margin-bottom: 0;
         @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {}
         @media screen and (min-width: $desktop) {
             margin-left: 0;
